@@ -55,7 +55,7 @@ ROOT_URLCONF = 'todo_site.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],  # Добавляем путь к каталогу с шаблонами
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
